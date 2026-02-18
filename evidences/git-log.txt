@@ -1,0 +1,28 @@
+*   abd4a6a Merge pull request #6 from RaulRX/feature/resta
+|\  
+| *   a3df871 solved conflicts merging main branch into feature/resta branch. sum method added
+| |\  
+| |/  
+|/|   
+* |   d921208 Merge pull request #5 from RaulRX/feature/suma
+|\ \  
+| * | 2103d14 add operations file with info and sum methods
+|/ /  
+| * 7b13e38 add operations file with info and sum methods
+|/  
+*   41b637b Merge pull request #4 from RaulRX/feature/gitignore
+|\  
+| * 7417200 Modify evidencias.md and new image
+| * 7611bfb add gitignore-status file and modified EVIDENCIAS.md
+* | bc44e60 Merge pull request #3 from RaulRX/feature/gitignore
+|\| 
+| * 2332aab gitignore creation with some rules
+|/  
+*   a153d1b Merge pull request #2 from RaulRX/aniadir-evidencias
+|\  
+| * 6b47d2d Upload modified md file filled with images
+* | 7f24e57 Merge pull request #1 from RaulRX/aniadir-evidencias
+|\| 
+| * 5e32600 Upload evidencias md file
+|/  
+* 3358c1d Initial commit with README.md file
