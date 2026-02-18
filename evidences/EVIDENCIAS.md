@@ -1,4 +1,4 @@
-# Evidencias restricciones rama main - Raúl Sánchez Serrano
+# Evidencias restricciones rama main
 
 ### 1. Paso a paso para configurar las restricciones sobre la rama main 
 En primer lugar, una vez creado el repositorio git, y configurar las restricciones siguientes:
@@ -42,3 +42,13 @@ Para verificar que se ha aplicado correctamente la configuración, he intentando
 La razón es la siguiente: En un proyecto real habrá muchos colaboradores trabajando en un mismo repositorio. Si todos los colaboradores suben cambios del proyecto sobre la rama main, esto puede provocar un crecimiento descontrolado y cometer errores. Además, imposibilita el trabajo en paralelo por parte de los colaboradores, haciendo muy poco eficiente el trabajo diario
 
 Con pull request, evitamos un mayor número de errores al verificar los cambios de otros colaboradores, además de hacer más eficiente el trabajo en paralelo.
+
+# Justificación del uso del fichero *.gitignore*
+
+El fichero *gitignore* permite a git no rastrear carpetas o ficheros que no queremos tener en cuenta a la hora de subir cambios al repositorio.
+
+La gran ventaja es no almacenar ficheros o carpetas que consumen almacenamiento innecesario, los cuales pueden ser muy pesados (Ejemplo: node_modules o pycache)
+
+##### imagen del proyecto ignorando ficheros
+
+![Ejemplo de imagen](./images/files_ignored.png)
