@@ -49,3 +49,6 @@ El fichero *gitignore* permite a git no rastrear carpetas o ficheros que no quer
 
 La gran ventaja es no almacenar ficheros o carpetas que consumen almacenamiento innecesario, los cuales pueden ser muy pesados (Ejemplo: node_modules o pycache)
 
+##### imagen del proyecto ignorando ficheros
+
+![Ejemplo de imagen](./images/files_ignored.png)
