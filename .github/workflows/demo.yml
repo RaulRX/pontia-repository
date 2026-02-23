@@ -1,0 +1,18 @@
+name: Workflow demo dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Nombre"
+        required: true
+      surname:
+        description: "Apellidos"
+        required: true
+jobs:
+  console_printing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print full name in console
+        env:
+          FULL_NAME: "${{ inputs.name }} ${{ inputs.surname }}"
+        run: echo "$FULL_NAME"

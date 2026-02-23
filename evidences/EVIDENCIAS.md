@@ -1,4 +1,3 @@
-
 # Repositorio: pontia-repository
 
 ###### owner: Raúl Sánchez Serrano
@@ -43,7 +42,7 @@ Para verificar que se ha aplicado correctamente la configuración, he intentando
 
 ![Ejemplo de imagen](./images/create_pull_request.png)
 
-### imagen_4: Aceptar y cerrar el pull request para mergear los cambios en la rama *main*
+##### imagen_4: Aceptar y cerrar el pull request para mergear los cambios en la rama *main*
 
 ![Ejemplo de imagen](./images/pull_request_merged.png)
 
