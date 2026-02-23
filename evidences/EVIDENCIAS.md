@@ -1,6 +1,16 @@
-# Evidencias restricciones rama main - Raúl Sánchez Serrano
 
-### 1. Paso a paso para configurar las restricciones sobre la rama main 
+# Repositorio: pontia-repository
+
+###### owner: Raúl Sánchez Serrano
+###### url: https://github.com/RaulRX/pontia-repository.git
+###### ssh: git@github.com:RaulRX/pontia-repository.git
+
+# 1. Explicacion general del ejercicio
+//TODO  
+
+# 2. Evidencias restricciones rama main
+
+### 2.1. Paso a paso para configurar las restricciones sobre la rama main 
 En primer lugar, una vez creado el repositorio git, y configurar las restricciones siguientes:
 
 - Evitar realizar acciones push sobre la rama main directamente
@@ -37,8 +47,32 @@ Para verificar que se ha aplicado correctamente la configuración, he intentando
 
 ![Ejemplo de imagen](./images/pull_request_merged.png)
 
-### 2. ¿Por qué es recomendable proteger la rama principal en un proyecto real?
+### 2.2. ¿Por qué es recomendable proteger la rama principal en un proyecto real?
 
 La razón es la siguiente: En un proyecto real habrá muchos colaboradores trabajando en un mismo repositorio. Si todos los colaboradores suben cambios del proyecto sobre la rama main, esto puede provocar un crecimiento descontrolado y cometer errores. Además, imposibilita el trabajo en paralelo por parte de los colaboradores, haciendo muy poco eficiente el trabajo diario
 
 Con pull request, evitamos un mayor número de errores al verificar los cambios de otros colaboradores, además de hacer más eficiente el trabajo en paralelo.
+
+# 3. Justificación del uso del fichero *.gitignore*
+
+El fichero *gitignore* permite a git no rastrear carpetas o ficheros que no queremos tener en cuenta a la hora de subir cambios al repositorio.
+
+La gran ventaja es no almacenar ficheros o carpetas que consumen almacenamiento innecesario, los cuales pueden ser muy pesados (Ejemplo: node_modules o pycache)
+
+##### imagen del proyecto ignorando ficheros
+
+![Ejemplo de imagen](./images/files_ignored.png)
+
+# 4. Evidencias ejecución workflow demo
+
+En primer lugar, se ha procedido a crear la siguiente ruta en la carpeta raiz del repositorio: *.github/workflow*. Dentro de esta carpeta, se ha definido el yml *demo* donde se define cómo, dónde y qué ejecutará.
+
+Una vez se ha hecho push de la rama *feature/ci*, se crea el pull request contra la rama main. Una vez se ha mergeado con éxito en la rama main, el workflow aparece en la pestaña ***Actions*** del repositorio en Github. 
+
+A continuación, se muestra la imagen donde se puede ver que es un workflow de tipo dispatch donde se requiere introducir dos datos: **nombre** y **apellidos** para poder ejecutar manualmente el workflow
+
+![Ejemplo de imagen](./images/inputs_workflow_demo.png)
+
+Una vez introducidos el nombre y apellidos, se procede a la ejecución. Si todo se ejecuta correctamente, entonces obtendremos en la salida el nombre con los apellidos concatenados como en la siguiente imagen:
+
+![Ejemplo de imagen](./images/execution_ok_workflow_demo.png)
