@@ -1,6 +1,6 @@
 name: Workflow demo dispatch
 on:
-  Workflow_dispatch:
+  workflow_dispatch:
     inputs:
       name:
         description: "Nombre"
@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: Print full name in console
         env:
-          FULL_NAME: ${{ name + surname}}
-        runs: echo $FULL_NAME
+          FULL_NAME: "${{ inputs.name }} ${{ inputs.surname }}"
+        run: echo "$FULL_NAME"
